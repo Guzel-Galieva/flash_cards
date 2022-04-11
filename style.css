@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gloria+Hallelujah&display=swap);
+
+body {
+    background-image: url(https://img4.goodfon.ru/wallpaper/nbig/5/53/abstract-colors-colorful-rainbow-background-fon-tsvet-raduga.jpg);
+    background-size: cover;
+}
+
+h1 {
+    background: linear-gradient(0.25turn, #DD5D66 15%, #F7A766, #FDE673, #86CB5E, #8CB0E7, #AE60A6 78%);
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    white-space: pre;
+    width: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    background-color: white;
+    border-radius: 20px;
+    height: 2%;
+    margin: auto;
+    max-height: 50px;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+}
+
+.name {
+    height: 160px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    width: 160px;
+}
+
+.front {
+    backface-visibility: hidden;
+    background-color: #f7f79e;
+    border-radius: 150% 10% / 10% 40%;
+    z-index: 2;
+}
+
+.back {
+    align-items: center;
+    background-color: #DDDDA1;
+    border-radius: 10% 40% / 150% 10%;
+    transform: rotateX(180deg);
+    z-index: 1;
+}
+
+.front, .back {
+    color: #5C5D8D;
+    display: flex;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.names {
+    align-items: center;
+    background-color: white;
+    border-radius: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-around;
+    margin: 2% auto;
+    max-width: 600px;
+    padding: 0 10%;
+    width: 35%;
+}
+
+.name:hover {
+    transform: rotateX(180deg);
+}
+
+.container{
+    perspective: 1000px;
+}
